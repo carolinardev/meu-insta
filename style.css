@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Quicksand:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #ffe4ec, #e0c3fc, #cde7ff);
+    margin: 0;
+}
+
+/* container */
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #ffffffcc;
+    backdrop-filter: blur(10px);
+    min-height: 100vh;
+}
+
+/* header */
+header {
+    position: sticky;
+    top: 0;
+    background: linear-gradient(90deg, #ff9ecf, #caa6ff, #9ed0ff);
+    padding: 15px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* formulário */
+form {
+    padding: 12px;
+}
+
+input, textarea {
+    width: 100%;
+    margin: 6px 0;
+    padding: 12px;
+    border: 1px solid #f3c6dd;
+    border-radius: 12px;
+    background: #fff0f6;
+    font-size: 15px;
+    outline: none;
+}
+
+/* foco */
+input:focus, textarea:focus {
+    border-color: #caa6ff;
+    background: #fff;
+}
+
+/* botão */
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #ff9ecf, #caa6ff);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    margin-top: 8px;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+
+/* feed */
+#feed {
+    padding-bottom: 80px;
+}
+
+/* post */
+.post {
+    background: #fff0f6;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* nome */
+.nome {
+    font-weight: 600;
+    color: #a855f7;
+    margin-bottom: 5px;
+}
+
+/* texto */
+.post div {
+    color: #555;
+}
+
+/* imagem */
+img {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 8px;
+}
+
+/* ações */
+.actions {
+    display: flex;
+    gap: 20px;
+    margin-top: 8px;
+    font-size: 18px;
+    color: #ff6fa5;
+}
+
+/* comentários */
+.comentarios input {
+    border: none;
+    border-top: 1px solid #f3c6dd;
+    border-radius: 0;
+    padding: 10px;
+    background: #fff;
+}
+
+/* navbar */
+.navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 500px;
+    background: #ffffffdd;
+    backdrop-filter: blur(10px);
+    border-top: 1px solid #f3c6dd;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.navbar span {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* mobile */
+@media (max-width: 500px) {
+    .container {
+        border: none;
+    }
+}
+.actions span:last-child {
+    color: #ff4d6d;
+}
+/* VARIÁVEIS DE COR */
+:root {
+    --bg: #ffe4ec;
+    --bg2: #e0c3fc;
+    --bg3: #cde7ff;
+    --card: #ffffffcc;
+    --text: #333;
+    --input: #fff0f6;
+}
+
+/* MODO ESCURO */
+body.dark {
+    --bg: #1e1e2f;
+    --bg2: #2a2a40;
+    --bg3: #1a1a2e;
+    --card: #2b2b3c;
+    --text: #f1f1f1;
+    --input: #3a3a50;
+}
+
+/* APLICANDO */
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(180deg, var(--bg), var(--bg2), var(--bg3));
+    color: var(--text);
+    margin: 0;
+}
+
+.container {
+    background: var(--card);
+}
+
+/* inputs */
+input, textarea {
+    background: var(--input);
+    color: var(--text);
+}
+
+/* post */
+.post {
+    background: var(--input);
+}
+
+/* navbar */
+.navbar {
+    background: var(--card);
+}
+.creditos {
+    text-align: center;
+    font-size: 13px;
+    margin: 20px 0;
+    color: #31243d;
+    opacity: 0.8;
+}

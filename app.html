@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meu Insta</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>Meu Insta 📸<span onclick="toggleDark()" style="float:right; cursor:pointer;">🌙</span></header>
+</header>
+
+    <form id="formPost">
+        <input type="text" id="nome" placeholder="Usuário" required>
+        <textarea id="mensagem" placeholder="O que está pensando?" required></textarea>
+        <input type="file" id="imagem" accept="image/*">
+        <button type="submit">Publicar</button>
+    </form>
+
+    <div id="feed"></div>
+    <p class="creditos">Desenvolvido por Ana Carolina Ribeiro 2026✨</p>
+
+</div>
+
+<!-- barra inferior estilo Instagram -->
+<div class="navbar">
+    <span onclick="window.scrollTo(0,0)">🏠</span>
+    <span onclick="alert('Em breve 🔥')">🔍</span>
+    <span onclick="alert('Em breve 🔥')">➕</span>
+    <span onclick="alert('Em breve 🔥')">❤️</span>
+    <span onclick="voltar()">👤</span>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
